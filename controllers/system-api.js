@@ -40,7 +40,6 @@ exports.createSetting = function(req, res, next) {
 // Edit setting by id
 exports.editSettingById = function(req, res, next) {
 
-  // Optionals
   req.assert('key', 'Key cannot be empty').notEmpty();
   req.assert('value', 'Value cannot be empty').notEmpty();
 
